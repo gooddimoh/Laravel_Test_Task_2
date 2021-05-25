@@ -13,7 +13,12 @@ class Employees extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('employees', function (Blueprint $table) {
+            $table->id();
+            $table->string('id');
+            $table->integer('sallary');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +28,6 @@ class Employees extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('clients');
     }
 }

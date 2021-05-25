@@ -13,7 +13,12 @@ class Orders extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('orders', function (Blueprint $table) {
+            $table->id();
+            $table->string('id');
+            $table->integer('sallary');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +28,6 @@ class Orders extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('orders');
     }
 }

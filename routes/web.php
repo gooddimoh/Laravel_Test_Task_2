@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,11 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/ClientsController', 'ClientsController@index');
+Route::get('/Employees', 'EmployeesController@index');
+Route::get('/Expenses', 'ExpensesController@index');
+Route::get('/Orders', 'OrdersController@index');
 
-Route::get('/Clients', 'Clients@index');
-Route::get('/Employees', 'Employees@index');
-Route::get('/Expenses', 'Expenses@index');
-Route::get('/Orders', 'Orders@index');
+Route::get('/', 'MainController@index');
+Route::get('/form_data', 'MainController@post');
