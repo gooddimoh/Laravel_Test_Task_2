@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 
 class ExpensesController extends Controller
 {
-    public function index(){
+    public function index(Request $request){
         $orders = new Orders();
         $clients = new Clients();
         $expenses = new \App\Models\Expenses();
@@ -19,7 +19,7 @@ class ExpensesController extends Controller
         if($employees->data4){ }
     }
 
-    public function result(){
+    public function result(Request $request){
         Квартал;
         Year;
         $orders = new Orders();
@@ -31,15 +31,7 @@ class ExpensesController extends Controller
         if($employees->data4){ }
     }
 
-    public function store(){
-
-    }
-
-    public function delete(){
-
-    }
-
-    public function update(){
-
-    }
+    public function store(Request $request){}
+    public function delete(Request $request){}
+    public function update(Request $request){}
 }

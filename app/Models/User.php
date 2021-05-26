@@ -40,4 +40,16 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function index(){}
+    public function index2(){}
+    public function index3(){}
+    public function index4(){}
+    public function index5(){}
+    public function index6(){}
+    public function index7(){}
+    public function index8(){}
+    public function index9(){}
+    public function index10(){}
+
 }

@@ -13,13 +13,13 @@ class OrdersController extends Controller
         return view('result', $result);
     }
 
-    public function store()
+    public function store(Request $request)
     {
         return "data store";
 
     }
 
-    public function delete()
+    public function delete(Request $request)
     {
         return "data delete";
 

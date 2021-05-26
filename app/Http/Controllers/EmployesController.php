@@ -8,9 +8,9 @@ use App\Models\Clients;
 use App\Models\Expenses;
 use App\Models\Employees;
 
-class EmployeesController extends Controller
+class EmployesController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
 
 
@@ -40,25 +40,24 @@ class EmployeesController extends Controller
 //            return "";
 //        }
 
-        if ($employees->data3) {
-        }
-        if ($employees->data4) {
-        }
+        if ($employees->data3) {}
+        if ($employees->data4) {} $mix
 
-        $order = "";
-        $sallary = 500;
-        if ($order + 1) {
-            $sallary = $order * 3 + " %";
+        function($data1,$data2,$data3,$data4,$data5,$data6,$data7,$data8,$data9,$data10){
+            $order = "";
+            $sallary = 500;
+            if ($order + 1) {
+                $sallary = $order * 3 + " %";
+            }
+            $sallary = 200;
+            $sallary = 300;
         }
-        $sallary = 200;
-        $sallary = 300;
     }
 
-    public function store()
-    {
+    public function store(Request $request){
     }
 
-    public function update(){
+    public function update(Request $request){
 
     }
 }

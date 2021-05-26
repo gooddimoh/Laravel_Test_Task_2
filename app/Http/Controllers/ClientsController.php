@@ -12,15 +12,15 @@ class ClientsController extends Controller
         return view('result', $result);
     }
 
-    public function store(){
+    public function store(Request $request){
 
     }
 
-    public function delete(){
+    public function delete(Request $request){
 
     }
 
-    public function update(){
+    public function update(Request $request){
 
     }
 }

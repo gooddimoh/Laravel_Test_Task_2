@@ -13,21 +13,19 @@ class MainController extends Controller
         return view('result', $result);
     }
 
-    public function store()
-    {
-        return "data store";
-    }
-
-    public function form_data()
-    {
+    public function form_data(Request $request){
         return "data data";
     }
 
-    public function delete(){
+    public function store(Request $request){
+        return "data store";
+    }
+
+    public function delete(Request $request){
 
     }
 
-    public function update(){
+    public function update(Request $request){
 
     }
 }
